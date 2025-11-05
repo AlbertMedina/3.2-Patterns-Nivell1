@@ -10,12 +10,12 @@ public class Main {
         System.out.println("PROSCIUTTO");
         System.out.println(pizzaChef.buildProsciuttoPizza());
 
-        System.out.println();
+        System.out.println("--------------------------------------------------");
 
         System.out.println("HAWAIIAN");
         System.out.println(pizzaChef.buildHawaiianPizza());
 
-        System.out.println();
+        System.out.println("--------------------------------------------------");
 
         System.out.println("VEGETARIAN");
         System.out.println(pizzaChef.buildVegetarianPizza());
