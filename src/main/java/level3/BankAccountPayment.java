@@ -4,6 +4,6 @@ public class BankAccountPayment implements Callback {
 
     @Override
     public void call() {
-        System.out.println("Paid with bank account");
+        System.out.println("Paying with bank account");
     }
 }

@@ -4,6 +4,6 @@ public class CreditCardPayment implements Callback {
 
     @Override
     public void call() {
-        System.out.println("Paid with credit card");
+        System.out.println("Paying with credit card");
     }
 }
