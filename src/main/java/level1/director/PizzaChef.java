@@ -16,7 +16,7 @@ public class PizzaChef {
                 .addTopping("tomato")
                 .addTopping("mozzarella")
                 .addTopping("ham")
-                .getResult();
+                .build();
     }
 
     public Pizza buildHawaiianPizza() {
@@ -27,7 +27,7 @@ public class PizzaChef {
                 .addTopping("mozzarella")
                 .addTopping("ham")
                 .addTopping("pineapple")
-                .getResult();
+                .build();
     }
 
     public Pizza buildVegetarianPizza() {
@@ -38,6 +38,6 @@ public class PizzaChef {
                 .addTopping("mozzarella")
                 .addTopping("mushrooms")
                 .addTopping("vegetables")
-                .getResult();
+                .build();
     }
 }

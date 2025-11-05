@@ -12,5 +12,5 @@ public interface PizzaBuilder {
 
     PizzaBuilder addTopping(String topping);
 
-    Pizza getResult();
+    Pizza build();
 }

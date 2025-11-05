@@ -32,7 +32,7 @@ public class ProsciuttoPizzaBuilder implements PizzaBuilder {
     }
 
     @Override
-    public Pizza getResult() {
+    public Pizza build() {
         return new Pizza(size, doughType, toppings);
     }
 }
