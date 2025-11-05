@@ -1,4 +1,4 @@
-package level2;
+package level2.observers;
 
 public class BrokerageB implements Brokerage {
 

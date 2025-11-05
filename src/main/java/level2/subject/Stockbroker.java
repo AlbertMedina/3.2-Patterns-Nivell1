@@ -1,4 +1,6 @@
-package level2;
+package level2.subject;
+
+import level2.observers.Brokerage;
 
 import java.util.ArrayList;
 import java.util.List;
