@@ -5,16 +5,28 @@ public class Main {
 
         Stockbroker stockbroker = new Stockbroker();
 
-        stockbroker.addBrokerage(new BrokerageA("Alpha"));
-        stockbroker.addBrokerage(new BrokerageB("Beta"));
-        stockbroker.addBrokerage(new BrokerageB("Gamma"));
+        BrokerageA alpha = new BrokerageA("Alpha");
+        BrokerageB beta = new BrokerageB("Beta");
+        BrokerageB gamma = new BrokerageB("Gamma");
+        BrokerageA delta = new BrokerageA("Delta");
 
-        stockbroker.updateStocksState("Stocks up!");
+        stockbroker.addBrokerage(alpha);
+        stockbroker.addBrokerage(beta);
+        stockbroker.addBrokerage(gamma);
 
-        System.out.println("------------------------------------------------");
+        stockbroker.updateStocksState("Stocks up");
 
-        stockbroker.addBrokerage(new BrokerageA("Delta"));
+        System.out.println("----------------------------------------------------------------");
 
-        stockbroker.updateStocksState("Stocks down!");
+        stockbroker.addBrokerage(delta);
+
+        stockbroker.updateStocksState("Stocks down");
+
+        System.out.println("----------------------------------------------------------------");
+
+        stockbroker.removeBrokerage(beta);
+        stockbroker.removeBrokerage(gamma);
+
+        stockbroker.updateStocksState("Stocks up");
     }
 }

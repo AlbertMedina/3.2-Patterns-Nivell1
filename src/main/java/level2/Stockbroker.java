@@ -21,6 +21,10 @@ public class Stockbroker {
         brokerages.add(brokerage);
     }
 
+    public void removeBrokerage(Brokerage brokerage) {
+        brokerages.remove(brokerage);
+    }
+
     public void updateStocksState(String state) {
         stocksState = state;
         notifyBrokerages(stocksState);
