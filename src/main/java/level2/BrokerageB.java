@@ -2,8 +2,14 @@ package level2;
 
 public class BrokerageB implements Brokerage {
 
+    private final String name;
+
+    public BrokerageB(String name) {
+        this.name = name;
+    }
+
     @Override
     public void update(String message) {
-        System.out.println("Message received by Brokerage B: " + message);
+        System.out.println("Message received by " + name + " (brokerage of type B): " + message);
     }
 }
