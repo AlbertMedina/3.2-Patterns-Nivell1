@@ -29,9 +29,6 @@ public class Pizza {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Size: ").append(size.toString().toLowerCase()).append("\nDough: ").append(doughType.toString().toLowerCase()).append("\nToppings:");
-        toppings.forEach(t -> sb.append("\n  - ").append(t));
-        return sb.toString();
+        return "Size: " + size.toString().toLowerCase() + "\nDough: " + doughType.toString().toLowerCase() + "\nToppings: " + String.join(", ", toppings);
     }
 }

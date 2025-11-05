@@ -3,28 +3,41 @@ package level1.director;
 import level1.builder.HawaiianPizzaBuilder;
 import level1.builder.ProsciuttoPizzaBuilder;
 import level1.builder.VegetarianPizzaBuilder;
+import level1.pizza.Pizza;
 import level1.pizza.PizzaDoughType;
 import level1.pizza.PizzaSize;
 
-import java.util.List;
-
 public class PizzaChef {
 
-    public void buildProsciuttoPizza(ProsciuttoPizzaBuilder pizzaBuilder) {
-        pizzaBuilder.setSize(PizzaSize.LARGE);
-        pizzaBuilder.setDoughType(PizzaDoughType.THICK);
-        pizzaBuilder.setToppings(List.of("tomato", "mozzarella", "ham"));
+    public Pizza buildProsciuttoPizza() {
+        return new ProsciuttoPizzaBuilder()
+                .setSize(PizzaSize.LARGE)
+                .setDoughType(PizzaDoughType.THICK)
+                .addTopping("tomato")
+                .addTopping("mozzarella")
+                .addTopping("ham")
+                .build();
     }
 
-    public void buildHawaiianPizza(HawaiianPizzaBuilder pizzaBuilder) {
-        pizzaBuilder.setSize(PizzaSize.MEDIUM);
-        pizzaBuilder.setDoughType(PizzaDoughType.THIN);
-        pizzaBuilder.setToppings(List.of("tomato", "mozzarella", "ham", "pineapple"));
+    public Pizza buildHawaiianPizza() {
+        return new HawaiianPizzaBuilder()
+                .setSize(PizzaSize.MEDIUM)
+                .setDoughType(PizzaDoughType.THIN)
+                .addTopping("tomato")
+                .addTopping("mozzarella")
+                .addTopping("ham")
+                .addTopping("pineapple")
+                .build();
     }
 
-    public void buildVegetarianPizza(VegetarianPizzaBuilder pizzaBuilder) {
-        pizzaBuilder.setSize(PizzaSize.SMALL);
-        pizzaBuilder.setDoughType(PizzaDoughType.NEAPOLITAN);
-        pizzaBuilder.setToppings(List.of("tomato", "mozzarella", "mushrooms", "vegetables"));
+    public Pizza buildVegetarianPizza() {
+        return new VegetarianPizzaBuilder()
+                .setSize(PizzaSize.SMALL)
+                .setDoughType(PizzaDoughType.NEAPOLITAN)
+                .addTopping("tomato")
+                .addTopping("mozzarella")
+                .addTopping("mushrooms")
+                .addTopping("vegetables")
+                .build();
     }
 }

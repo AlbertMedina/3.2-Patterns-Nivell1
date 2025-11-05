@@ -4,15 +4,13 @@ import level1.pizza.Pizza;
 import level1.pizza.PizzaDoughType;
 import level1.pizza.PizzaSize;
 
-import java.util.List;
-
 public interface PizzaBuilder {
 
-    public void setSize(PizzaSize size);
+    PizzaBuilder setSize(PizzaSize size);
 
-    public void setDoughType(PizzaDoughType doughType);
+    PizzaBuilder setDoughType(PizzaDoughType doughType);
 
-    public void setToppings(List<String> toppings);
+    PizzaBuilder addTopping(String topping);
 
-    public Pizza getResult();
+    Pizza build();
 }
