@@ -8,11 +8,11 @@ import java.util.List;
 
 public interface PizzaBuilder {
 
-    public void setSize(PizzaSize size);
+    void setSize(PizzaSize size);
 
-    public void setDoughType(PizzaDoughType doughType);
+    void setDoughType(PizzaDoughType doughType);
 
-    public void setToppings(List<String> toppings);
+    void setToppings(List<String> toppings);
 
-    public Pizza getResult();
+    Pizza getResult();
 }
