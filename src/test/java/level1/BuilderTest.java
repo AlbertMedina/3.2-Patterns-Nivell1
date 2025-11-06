@@ -14,6 +14,7 @@ public class BuilderTest {
     void shouldBuildProsciuttoPizza() {
         PizzaChef pizzaChef = new PizzaChef();
         Pizza pizza = pizzaChef.buildProsciuttoPizza();
+        assertEquals("prosciutto", pizza.getName());
         assertEquals(PizzaSize.LARGE, pizza.getSize());
         assertEquals(PizzaDoughType.THICK, pizza.getDoughType());
         assertEquals(3, pizza.getToppings().size());
@@ -26,6 +27,7 @@ public class BuilderTest {
     void shouldBuildHawaiianPizza() {
         PizzaChef pizzaChef = new PizzaChef();
         Pizza pizza = pizzaChef.buildHawaiianPizza();
+        assertEquals("hawaiian", pizza.getName());
         assertEquals(PizzaSize.MEDIUM, pizza.getSize());
         assertEquals(PizzaDoughType.THIN, pizza.getDoughType());
         assertEquals(4, pizza.getToppings().size());
@@ -39,6 +41,7 @@ public class BuilderTest {
     void shouldBuildVegetarianPizza() {
         PizzaChef pizzaChef = new PizzaChef();
         Pizza pizza = pizzaChef.buildVegetarianPizza();
+        assertEquals("vegetarian", pizza.getName());
         assertEquals(PizzaSize.SMALL, pizza.getSize());
         assertEquals(PizzaDoughType.NEAPOLITAN, pizza.getDoughType());
         assertEquals(4, pizza.getToppings().size());
